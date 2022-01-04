@@ -12,11 +12,11 @@
         android:id="@+id/txtHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, Udin"
         android:layout_marginTop="20dp"
-        android:textStyle="bold"
+        android:text="Hello, Udin"
+        android:textColor="@color/black"
         android:textSize="24dp"
-        android:textColor="@color/black"/>
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:id="@+id/searchRelLayout"
@@ -135,63 +135,63 @@
             android:text="Genre Teratas"
             android:textColor="@color/black"
             android:textSize="24dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/iconGenreDrama"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_marginTop="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/drama"/>
+            android:layout_below="@id/txtTopGenre"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/drama" />
 
         <View
             android:id="@+id/iconGenreAction"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_toRightOf="@id/iconGenreDrama"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/action"/>
+            android:layout_below="@id/txtTopGenre"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconGenreDrama"
+            android:background="@drawable/action" />
 
         <View
             android:id="@+id/iconGenreHorror"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_toRightOf="@id/iconGenreAction"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/horror"/>
+            android:layout_below="@id/txtTopGenre"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconGenreAction"
+            android:background="@drawable/horror" />
 
         <View
             android:id="@+id/iconGenreThriller"
-            android:layout_below="@id/iconGenreDrama"
-            android:layout_marginTop="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/thriller"/>
+            android:layout_below="@id/iconGenreDrama"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/thriller" />
 
         <View
             android:id="@+id/iconGenreComedy"
-            android:layout_below="@id/iconGenreAction"
-            android:layout_toRightOf="@id/iconGenreThriller"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/comedy"/>
+            android:layout_below="@id/iconGenreAction"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconGenreThriller"
+            android:background="@drawable/comedy" />
 
         <View
             android:id="@+id/iconGenreLainnya"
-            android:layout_below="@id/iconGenreHorror"
-            android:layout_toRightOf="@id/iconGenreComedy"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:background="@drawable/lainnya"/>
+            android:layout_below="@id/iconGenreHorror"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconGenreComedy"
+            android:background="@drawable/lainnya" />
 
     </RelativeLayout>
 
