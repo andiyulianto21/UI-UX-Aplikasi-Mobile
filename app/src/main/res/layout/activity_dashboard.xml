@@ -5,193 +5,214 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity"
-    android:padding="20dp"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/txtHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello, Udin"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="24dp"
-        android:textColor="@color/black"/>
+    <View
+        android:id="@+id/wave1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave_1" />
+
+    <View
+        android:id="@+id/wave2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/ic_wave_2" />
 
     <RelativeLayout
-        android:id="@+id/searchRelLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHello"
-        android:layout_marginTop="20dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
 
-        <View
-            android:id="@+id/rectangleSearch"
+        <TextView
+            android:id="@+id/txtHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Selamat Siang, Eko"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/searchRelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHello"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:id="@+id/rectangleSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_rectangle" />
+
+            <View
+                android:id="@+id/iconSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/edtTxtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iconSearch"
+                android:background="@null"
+                android:hint="Cari film, genre, pemeran disini"
+                android:inputType="text|textNoSuggestions"
+                android:textColorHint="#B4B4B4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lanjutkanRelLayout"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/rounded_rectangle" />
-
-        <View
-            android:id="@+id/iconSearch"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-            android:layout_centerVertical="true"
-            android:background="@drawable/ic_search" />
-
-        <EditText
-            android:id="@+id/edtTxtSearch"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/iconSearch"
-            android:background="@null"
-            android:hint="Cari film, genre, pemeran disini"
-            android:inputType="text|textNoSuggestions"
-            android:textColorHint="#B4B4B4"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/lanjutkanRelLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/searchRelLayout"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/txtRecentPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lanjutkan Menonton"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:textStyle="bold"/>
-
-        <RelativeLayout
-            android:id="@+id/recentPlay1"
-            android:layout_width="180dp"
-            android:layout_height="170dp"
-            android:layout_below="@+id/txtRecentPlay"
-            android:layout_marginTop="10dp">
-
-            <View
-                android:id="@+id/imageSpiderman"
-                android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:background="@drawable/spiderman_ffh" />
+            android:layout_below="@+id/searchRelLayout"
+            android:layout_marginTop="20dp">
 
             <TextView
+                android:id="@+id/txtRecentPlay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageSpiderman"
+                android:text="Lanjutkan Menonton"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/recentPlay1"
+                android:layout_width="180dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/txtRecentPlay"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:id="@+id/imageSpiderman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="@drawable/spiderman_ffh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageSpiderman"
+                    android:layout_marginTop="10dp"
+                    android:text="Spider-man Far From Home (2019)"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recentPlay2"
+                android:layout_width="180dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/txtRecentPlay"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Spider-man Far From Home (2019)"
-                android:textColor="@color/black" />
+                android:layout_toRightOf="@+id/recentPlay1">
+
+                <View
+                    android:id="@+id/imageInterstellar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="@drawable/interstellar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageInterstellar"
+                    android:layout_marginTop="10dp"
+                    android:text="Interstellar (2014)"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/recentPlay2"
-            android:layout_width="180dp"
-            android:layout_height="170dp"
-            android:layout_below="@+id/txtRecentPlay"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/recentPlay1">
-
-            <View
-                android:id="@+id/imageInterstellar"
-                android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:background="@drawable/interstellar" />
+            android:id="@+id/topGenreRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lanjutkanRelLayout"
+            android:layout_marginTop="20dp">
 
             <TextView
+                android:id="@+id/txtTopGenre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageInterstellar"
+                android:text="Genre Teratas"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/iconGenreDrama"
+                android:layout_below="@id/txtTopGenre"
                 android:layout_marginTop="10dp"
-                android:text="Interstellar (2014)"
-                android:textColor="@color/black" />
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/drama"/>
+
+            <View
+                android:id="@+id/iconGenreAction"
+                android:layout_below="@id/txtTopGenre"
+                android:layout_toRightOf="@id/iconGenreDrama"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/action"/>
+
+            <View
+                android:id="@+id/iconGenreHorror"
+                android:layout_below="@id/txtTopGenre"
+                android:layout_toRightOf="@id/iconGenreAction"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/horror"/>
+
+            <View
+                android:id="@+id/iconGenreThriller"
+                android:layout_below="@id/iconGenreDrama"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/thriller"/>
+
+            <View
+                android:id="@+id/iconGenreComedy"
+                android:layout_below="@id/iconGenreAction"
+                android:layout_toRightOf="@id/iconGenreThriller"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/comedy"/>
+
+            <View
+                android:id="@+id/iconGenreLainnya"
+                android:layout_below="@id/iconGenreHorror"
+                android:layout_toRightOf="@id/iconGenreComedy"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/lainnya"/>
 
         </RelativeLayout>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/topGenreRelLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lanjutkanRelLayout"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/txtTopGenre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Genre Teratas"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:textStyle="bold"/>
-
-        <View
-            android:id="@+id/iconGenreDrama"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_marginTop="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/drama"/>
-
-        <View
-            android:id="@+id/iconGenreAction"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_toRightOf="@id/iconGenreDrama"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/action"/>
-
-        <View
-            android:id="@+id/iconGenreHorror"
-            android:layout_below="@id/txtTopGenre"
-            android:layout_toRightOf="@id/iconGenreAction"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/horror"/>
-
-        <View
-            android:id="@+id/iconGenreThriller"
-            android:layout_below="@id/iconGenreDrama"
-            android:layout_marginTop="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/thriller"/>
-
-        <View
-            android:id="@+id/iconGenreComedy"
-            android:layout_below="@id/iconGenreAction"
-            android:layout_toRightOf="@id/iconGenreThriller"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/comedy"/>
-
-        <View
-            android:id="@+id/iconGenreLainnya"
-            android:layout_below="@id/iconGenreHorror"
-            android:layout_toRightOf="@id/iconGenreComedy"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/lainnya"/>
 
     </RelativeLayout>
 
